@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Diary</string>
+
+    <string name="no_diary">There is nothing here yet!</string>
+
+    <string name="delete_menu">Delete</string>
+</resources>

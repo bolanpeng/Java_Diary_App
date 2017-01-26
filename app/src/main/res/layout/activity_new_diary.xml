@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_diary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shelley.diary.NewDiaryActivity">
+
+    <EditText
+        android:id="@+id/diary_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:background="@drawable/input_outline"
+        android:maxLines="1"
+        android:hint="Title ..."/>
+
+    <ScrollView
+        android:id="@+id/messageScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diary_title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_outline"
+        android:layout_above="@+id/saveDiary">
+
+        <EditText
+            android:id="@+id/diary_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Content ..."
+            android:minLines="3"
+            android:background="@null"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:gravity="top" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/saveDiary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Diary"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary" />
+
+</RelativeLayout>
